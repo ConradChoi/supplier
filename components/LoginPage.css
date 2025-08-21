@@ -38,25 +38,25 @@
 }
 
 .banner-main-title {
-  font-size: 3.5rem;
-  font-weight: 800;
+  font-size: 2.8rem;
+  font-weight: 400;
   margin-bottom: 20px;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  letter-spacing: 2px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
 }
 
 .banner-main-subtitle {
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 300;
   margin-bottom: 15px;
-  opacity: 0.95;
+  opacity: 0.9;
   line-height: 1.4;
 }
 
 .banner-main-description {
-  font-size: 1.1rem;
-  font-weight: 400;
-  opacity: 0.9;
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.85;
   line-height: 1.5;
 }
 
@@ -81,17 +81,17 @@
 }
 
 .login-title {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 400;
   color: #333;
   margin-bottom: 8px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .login-subtitle {
-  font-size: 0.9rem;
-  color: #666;
-  font-weight: 400;
+  font-size: 0.85rem;
+  color: #777;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -106,7 +106,7 @@
 .form-group label {
   display: block;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 400;
   color: #555;
   margin-bottom: 8px;
 }
@@ -182,7 +182,7 @@
   border: none;
   border-radius: 8px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin-bottom: 24px;
@@ -207,7 +207,7 @@
 .signup-link {
   color: #667eea;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
   transition: color 0.3s ease;
   background: none;
   border: none;
@@ -217,6 +217,29 @@
 
 .signup-link:hover {
   color: #5a6fd8;
+}
+
+/* 시픈 서비스 바로가기 */
+.seepn-link-section {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.seepn-link {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.seepn-link:hover {
+  color: #20c997;
 }
 
 /* 다국어 선택 */
@@ -236,6 +259,7 @@
   color: #666;
   border-radius: 4px;
   font-size: 0.8rem;
+  font-weight: 400;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -277,7 +301,7 @@
   }
 
   .login-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 6px;
   }
 
@@ -322,7 +346,7 @@
   }
 
   .login-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .login-subtitle {

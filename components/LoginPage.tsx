@@ -20,7 +20,9 @@ const translations = {
     signup: '회원가입',
     bannerTitle: 'SEEPN',
     bannerSubtitle: '한국 최초 공급사 검색 서비스',
-    bannerDescription: '공급사가 주인공이 되는 B2B 검색 플랫폼, Seepn에서 시작하세요.'
+    bannerDescription: '공급사가 주인공이 되는 B2B 검색 플랫폼, Seepn에서 시작하세요.',
+    seepnText: '시픈 서비스가 궁금하신가요?',
+    seepnLink: '바로가기'
   },
   en: {
     title: 'SSM',
@@ -37,7 +39,9 @@ const translations = {
     signup: 'Sign Up',
     bannerTitle: 'SEEPN',
     bannerSubtitle: 'Korea\'s First Supplier Search Service',
-    bannerDescription: 'Start with Seepn, the B2B search platform where suppliers are the protagonists.'
+    bannerDescription: 'Start with Seepn, the B2B search platform where suppliers are the protagonists.',
+    seepnText: 'Curious about Seepn service?',
+    seepnLink: 'Quick Access'
   },
   ja: {
     title: 'SSM',
@@ -54,7 +58,9 @@ const translations = {
     signup: '会員登録',
     bannerTitle: 'SEEPN',
     bannerSubtitle: '韓国初の供給者検索サービス',
-    bannerDescription: '供給者が主人公となるB2B検索プラットフォーム、Seepnで始めましょう。'
+    bannerDescription: '供給者が主人公となるB2B検索プラットフォーム、Seepnで始めましょう。',
+    seepnText: 'シプンサービスが気になりますか？',
+    seepnLink: 'クイックアクセス'
   },
   zh: {
     title: 'SSM',
@@ -71,7 +77,9 @@ const translations = {
     signup: '注册',
     bannerTitle: 'SEEPN',
     bannerSubtitle: '韩国首个供应商搜索服务',
-    bannerDescription: '供应商成为主角的B2B搜索平台，从Seepn开始。'
+    bannerDescription: '供应商成为主角的B2B搜索平台，从Seepn开始。',
+    seepnText: '对希朋服务感兴趣？',
+    seepnLink: '快速访问'
   }
 }
 
@@ -113,6 +121,12 @@ const LoginPage: React.FC = () => {
 
   const handleLanguageChange = (language: 'ko' | 'en' | 'ja' | 'zh') => {
     setCurrentLanguage(language)
+  }
+
+  const handleSeepnLink = () => {
+    console.log('Seepn service link clicked')
+    // 시픈 서비스로 새창으로 이동
+    window.open('https://www.seepn.me', '_blank')
   }
 
   return (
@@ -204,6 +218,18 @@ const LoginPage: React.FC = () => {
                 onClick={handleSignup}
               >
                 {t.signup}
+              </button>
+            </div>
+
+            {/* 시픈 서비스 바로가기 */}
+            <div className="seepn-link-section">
+              <span>{t.seepnText} </span>
+              <button 
+                type="button" 
+                className="seepn-link"
+                onClick={handleSeepnLink}
+              >
+                {t.seepnLink}
               </button>
             </div>
 
