@@ -117,6 +117,8 @@ const LoginPage: React.FC = () => {
 
   const handleSignup = () => {
     console.log('Signup clicked')
+    // 회원가입 페이지로 이동
+    window.location.href = '/signup'
   }
 
   const handleLanguageChange = (language: 'ko' | 'en' | 'ja' | 'zh') => {
